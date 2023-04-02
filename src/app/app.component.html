@@ -1,0 +1,167 @@
+<div class="container">
+  <div class="sidebar">
+    <div class="logo-wrapper">
+      <div class="logo">
+        <h2>Cura</h2>
+      </div>
+    </div>
+    <div class="sidebar-content">
+      <div class="dashboard-wrapper">
+        <i class="fa fa-home mt" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </div>
+      <div class="feedback-wrapper">
+        <div class="current">
+          <i class="fa fa-commenting" aria-hidden="true"></i>
+          <span>Feedback</span>
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+        <ul class="item">
+          <li><span> Complaints</span></li>
+          <li>Commendation</li>
+        </ul>
+      </div>
+      <div class="configuration-wrapper">
+        <i class="fa fa-cog mt" aria-hidden="true"></i>
+        <span>Configurations</span>
+      </div>
+      <div class="contact-wrapper">
+        <i class="fa fa-address-book mt" aria-hidden="true"></i>
+        <span>Contacts</span>
+      </div>
+      <div class="reports-wrapper">
+        <i class="fa fa-bar-chart mt" aria-hidden="true"></i>
+        <span>Reports</span>
+      </div>
+      <div class="account-wrapper">
+        <i class="fa fa-cogs mt" aria-hidden="true"></i>
+        <span>Account Management</span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <h4 class="header-h4">
+          <span class="title">Feedback</span>
+          <span class="caret"
+            ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+          ></span>
+          <span class="sub-title">Complaints</span>
+        </h4>
+      </div>
+      <div class="header-icon">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="content-body">
+      <div class="feature">
+        <div class="feature-title">
+          <h4>Complaints</h4>
+        </div>
+        <div class="input">
+          <div class="text">
+            <input type="text" placeholder="Enter phone number" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="file">
+            <input type="file" role="button" class="file-upload" #importFile />
+
+            <button type="button" class="upload" (click)="importFile.click()">
+              <span
+                ><i class="fa fa-folder" aria-hidden="true"></i> Export
+                Complaints CSV</span
+              >
+            </button>
+            
+          </div>
+        </div>
+        <div class="extra">
+          <div class="actions">
+            <div>
+              <i class="fa fa-calendar mt" aria-hidden="true"></i> &nbsp;<span
+                >Start Date: Sept. 1</span
+              >
+            </div>
+            <div>
+              <i class="fa fa-calendar mt" aria-hidden="true"></i> &nbsp;<span
+                >Start Date: Sept. 30</span
+              >
+            </div>
+            <div class="progress">
+              <span>Status:In-Progress</span>
+            </div>
+            <div class="filter">
+              <i class="fa fa-filter" aria-hidden="true"></i> &nbsp;<span
+                >Filter</span
+              >
+            </div>
+            <div class="close">
+              <i class="fa fa-times-circle" aria-hidden="true"></i> &nbsp;<span
+                >Clear Filter</span
+              >
+            </div>
+          </div>
+          <div class="pagination">
+            <button type="button">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <span class="pagination-number">1 of 10 </span>
+            <button type="button">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <table>
+          <thead class="thead">
+            <tr>
+              <td>Time</td>
+              <td>Date</td>
+              <td>PhoneNumber</td>
+              <td>Category</td>
+              <td>Rating</td>
+              <td>NPS</td>
+              <td>Status</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="active">
+              <td>12:43:01 pm</td>
+              <td>10/09/2022</td>
+              <td>07038485738</td>
+              <td>Pharmacy</td>
+              <td>3.2</td>
+              <td>7</td>
+              <td>Resolved</td>
+              <td><button type="button" class="btn-purple">View</button></td>
+            </tr>
+            <tr>
+              <td>12:43:01 pm</td>
+              <td>10/09/2022</td>
+              <td>07038485738</td>
+              <td>Pharmacy</td>
+              <td>3.2</td>
+              <td>7</td>
+              <td>Resolved</td>
+              <td><button type="button" class="btn-purple">View</button></td>
+            </tr>
+            <tr>
+              <td>12:43:01 pm</td>
+              <td>10/09/2022</td>
+              <td>07038485738</td>
+              <td>Pharmacy</td>
+              <td>3.2</td>
+              <td>7</td>
+              <td>Resolved</td>
+              <td><button type="button" class="btn-purple">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
