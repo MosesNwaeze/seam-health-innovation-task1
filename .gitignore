@@ -42,3 +42,6 @@ testem.log
 Thumbs.db
 
 /mock-up-design.png
+
+# Local Netlify folder
+.netlify
